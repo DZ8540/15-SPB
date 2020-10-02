@@ -1,0 +1,1124 @@
+body
+    scroll-behavior: smooth
+
+#dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+    width: 100%
+    height: 100vh
+    background-color: #e6d4d4
+    position: relative
+    overflow: hidden
+    z-index: 0
+    &::after
+        content: ''
+        width: 100%
+        height: 100vh
+        position: absolute
+        top: 0
+        left: 0
+        background-image: url("../img/bg-i.jpg")
+        background-repeat: no-repeat
+        background-position: 40% 35%
+        z-index: 1
+    .dz-nav
+        display: flex
+        position: relative
+        z-index: 5
+        width: 100%
+        &_right
+            display: flex
+            align-items: center
+            margin-left: auto
+            margin-top: 25px
+            margin-right: 25px
+            &-lang
+                &_text
+                    font-size: 20px
+                    position: relative
+                    color: #070040
+                    font-family: "CenturyGhotic - Bold", sans-serif
+                    display: flex
+                    font-weight: 700
+                    justify-content: center
+                    text-decoration: none
+                    &:after
+                        content: ''
+                        position: absolute
+                        bottom: 0px
+                        width: 62px
+                        background-color: #070040
+                        height: 2px
+                        border-radius: 15px
+                &_drop
+                    display: none
+            &-burger
+                width: 100%
+                margin-left: 50px
+                &_link
+                    width: 100%
+                    height: 100%
+                    display: block
+                    &-icon
+                        display: block
+                        width: 55px
+                        height: 4px
+                        background-color: #070040
+                        border-radius: 15px
+                        position: relative
+                        margin-bottom: 8px
+                        &:last-child
+                            margin-bottom: 0
+                &_drop
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    transition: .5s
+                    width: 100%
+                    height: 100vh
+                    position: fixed
+                    top: 0
+                    right: -100%
+                    background-color: #e6d4d4
+                    &-exit
+                        position: absolute
+                        right: 20px
+                        top: 20px
+                        cursor: pointer
+                    &-list
+                        list-style: none
+                        text-align: center
+                        &_li
+                            &-link
+                                color: #070040
+                                text-decoration: none
+                                font-size: 20px
+                    &.active
+                        right: 0
+#dz-home
+    .dz-ship
+        position: absolute
+        bottom: -85px
+        right: -50px
+        z-index: 3
+        width: 400px
+    .dz-home
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        padding-top: 40px
+        z-index: 4
+        &_box
+            width: 80%
+            height: calc(100vh - 12em)
+            max-height: 700px
+            background-color: #F1EBE9
+            border-radius: 15px
+            box-shadow: 0 0 50px rgba(0, 0, 0, .3)
+            position: relative
+            &-mobileHand
+                display: none
+            &-hand
+                position: absolute
+                top: 90px
+                left: -190px
+                z-index: 4
+                width: 900px
+            &-card
+                position: absolute
+                bottom: 28%
+                left: 125px  
+                z-index: 4
+                &_inter
+                    &-number
+                        width: 380px
+                        height: 25px
+                        border-radius: 15px
+                        padding: 10px
+                        border: none
+                        // Font-style
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 20px
+                        color: #070040
+            &-title
+                position: absolute
+                top: 100px
+                right: 55px
+                &_first
+                    font-size: 34px
+                    color: #070040
+                    font-family: "CenturyGhotic - Bold", sans-serif
+                    font-weight: 700
+                    margin-bottom: 0px
+                &_second
+                    font-size: 34px
+                    color: #070040
+                    font-family: "CenturyGhotic - Bold", sans-serif
+                    font-weight: 700
+                    margin: 0
+                    text-transform: uppercase
+            &-button
+                position: absolute
+                bottom: 30%
+                right: 10%
+                &_link
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border-radius: 50px
+                    width: 250px
+                    height: 70px
+                    background-color: #7576a3
+                    box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                    // Text style
+                    color: #ffffff
+                    font-family: "CenturyGhotic - Regular", sans-serif
+                    font-size: 15px
+                    text-transform: uppercase
+                    text-decoration: none
+
+#dz-login
+    .dz-login
+        display: flex
+        justify-content: center
+        position: relative
+        padding-top: 40px
+        z-index: 3
+        &_flowersMobile
+            display: none
+        &_flowersLeft
+            position: absolute
+            z-index: 3
+            top: 25%
+            left: 105px
+            img
+                width: 80%
+        &_flowersRight
+            position: absolute
+            z-index: 3
+            top: 25%
+            right: 50px
+            img
+                width: 80%
+        &_box
+            width: 60%
+            height: calc(100vh - 10em)
+            background-color: #f2ebeb
+            border-radius: 15px
+            box-shadow: 0 0 50px rgba(0, 0, 0, .3)
+            position: relative
+            display: flex
+            align-items: center
+            z-index: 4
+            flex-direction: column
+            &-exit
+                position: absolute
+                top: 30px
+                right: 30px
+                &_icon
+                    width: 20px
+            &-inter
+                text-align: center
+                display: flex
+                justify-content: center
+                height: 100%
+                flex-direction: column
+                align-items: center
+                &_title
+                    &-head
+                        color: #070040
+                        font-family: "CenturyGhotic - Bold", sans-serif
+                        font-weight: 700
+                        font-size: 35px
+                        text-transform: uppercase
+                    &-subHead
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 20px
+                &_form
+                    &-section
+                        margin-bottom: 20px
+                        &_input
+                            width: 290px
+                            height: 40px
+                            box-shadow: 0 4px 10px rgba(158, 129, 134, 1)
+                            border-radius: 15px
+                            border: none
+                            padding: 0px 15px
+                            // Text style
+                            color: #000000
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 14px
+                        &_paragraph
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 12px
+                            margin: 0
+                            margin-top: 15px
+                    &-sectionButton
+                        margin-top: 25px
+                        margin-bottom: 30px
+                        &_submit
+                            width: 310px
+                            border-radius: 50px
+                            border: none
+                            background-color: #7576a3
+                            height: 50px
+                            cursor: pointer
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 15px
+                            text-transform: uppercase
+                &_label
+                    display: flex
+                    width: 320px
+                    justify-content: space-between
+                    &-text
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 15px
+                        text-decoration: none
+                        position: relative
+                        &::after
+                            content: ''
+                            width: 100%
+                            height: 1px
+                            position: absolute
+                            bottom: 0
+                            left: 0
+                            background-color: #070040
+
+#dz-refill
+    overflow-y: visible
+    .dz-refill
+        display: flex
+        justify-content: center
+        position: relative
+        z-index: 3
+        padding-top: 0
+        overflow: hidden
+        &_box
+            position: relative
+            display: flex
+            align-items: center
+            z-index: 4
+            flex-direction: column
+            text-align: center
+            &-title
+                &_head
+                    color: #070040
+                    font-family: "CenturyGhotic - Bold", sans-serif
+                    font-size: 25px
+                    font-weight: 700
+                    margin: 0
+                &_subHead
+                    color: #070040
+                    font-family: "CenturyGhotic - Bold", sans-serif
+                    font-size: 30px
+                    text-transform: uppercase
+                    font-weight: 700
+                    margin: 0
+                    margin: 10px 0
+            &-mini
+                width: 700px
+                background-color: #fff8f8
+                border-radius: 35px
+                margin-bottom: 40px
+                padding: 15px 0
+                display: flex
+                flex-direction: column
+                align-items: center
+                box-shadow: 0px 0px 20px rgba(153, 103, 130, 1)
+                &:last-child
+                    margin-bottom: 0
+                &_head
+                    color: #070040
+                    font-family: "CenturyGhotic - Bold", sans-serif
+                    font-size: 25px
+                    font-weight: 700
+                    margin: 0
+                    margin-bottom: 10px
+                &_subHead
+                    margin: 0
+                    color: #070040
+                    font-family: "CenturyGhotic - Regular", sans-serif
+                    font-size: 20px
+                    margin-bottom: 10px
+                &_bottom
+                    display: flex
+                    justify-content: space-around
+                    width: 70%
+                    &-firstText
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 20px
+                        span
+                            color: #070040
+                            font-family: "CenturyGhotic - Bold", sans-serif
+                            font-size: 25px
+                            font-weight: 700
+                    &-secondText
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 22px
+                        display: flex
+                        align-items: baseline
+                        img
+                            margin-right: 10px
+                            width: 35px
+        &_ship
+            position: absolute
+            bottom: -100px
+            right: -200px
+            z-index: 2
+            width: 600px
+
+#dz-info, #dz-secondInfo
+    overflow-y: visible
+    .dz-info, .dz-secondInfo
+        display: flex
+        justify-content: center
+        position: relative
+        z-index: 3
+        padding-top: 0
+        &_flowersMobile
+            display: none
+        &_flowersLeft
+            position: absolute
+            z-index: 3
+            top: 30%
+            left: 130px
+            img
+                width: 80%
+        &_flowersRight
+            position: absolute
+            z-index: 3
+            top: 30%
+            right: 75px
+            img
+                width: 80%
+        &_box
+            width: 60%
+            background-color: #f2ebeb
+            border-radius: 15px
+            box-shadow: 0 0 50px rgba(0, 0, 0, .3)
+            position: relative
+            display: flex
+            align-items: center
+            z-index: 4
+            flex-direction: column
+            padding-top: 20px   
+            &-exit
+                position: absolute
+                top: 30px
+                right: 30px
+                &_icon
+                    width: 20px
+            &-inter
+                text-align: center
+                display: flex
+                height: 100%
+                flex-direction: column
+                align-items: center
+                &_title
+                    &-head
+                        color: #070040
+                        font-family: "CenturyGhotic - Bold", sans-serif
+                        font-weight: 700
+                        font-size: 35px
+                        text-transform: uppercase
+                        margin: 0
+                        margin-bottom: 10px
+                    &-subHead
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 20px
+                        margin: 0
+                        margin-bottom: 15px
+                &_paragraph
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    &-icon
+                        width: 70px
+                        height: 70px
+                        border-radius: 50%
+                        background-color: #d3d4f5
+                        display: flex
+                        justify-content: center
+                        box-shadow: 0 0 20px 4px rgba(174, 162, 187, 1)
+                        align-items: center
+                        img
+                            width: 33px
+                    &-text
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 20px
+                        margin: 0
+                        margin-top: 15px
+                        margin-bottom: 15px
+                    &-link
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        border-radius: 50px
+                        width: 400px
+                        height: 80px
+                        background-color: #7576a3
+                        box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                        // Text style
+                        color: #ffffff
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 20px
+                        text-decoration: none
+                    &:last-child
+                        margin-top: 10px
+                        margin-bottom: 30px
+
+#dz-pay
+    .dz-pay
+        display: flex
+        justify-content: center
+        position: relative
+        padding-top: 0px
+        z-index: 3
+        height: 100%
+        align-items: center
+        &_mobileBus
+            display: none
+        &_bus
+            position: absolute
+            bottom: 50px
+            right: -500px
+        &_flowers
+            position: absolute
+            bottom: -80px
+            left: -300px
+        &_box
+            width: 60%
+            background-color: #f2ebeb
+            border-radius: 15px
+            box-shadow: 0 0 50px rgba(0, 0, 0, .3)
+            position: relative
+            display: flex
+            align-items: center
+            z-index: 4
+            flex-direction: column
+            padding: 20px 0
+            &-exit
+                position: absolute
+                top: 30px
+                right: 30px
+                &_icon
+                    width: 20px
+            &-inter
+                text-align: center
+                display: flex
+                height: 100%
+                flex-direction: column
+                align-items: center
+                &_title
+                    &-head
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 25px
+                        &_bold
+                            font-family: "CenturyGhotic - Bold", sans-serif
+                            font-weight: 700
+                            font-size: 30px
+                    &-subHead
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 20px
+                        &_bold
+                            font-family: "CenturyGhotic - Bold", sans-serif
+                            font-weight: 700
+                &_form
+                    &-cash
+                        margin-bottom: 20px
+                        &_amount
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            margin-right: 20px
+                        &_data
+                            width: 200px
+                            height: 55px
+                            margin-right: 20px
+                            border-radius: 15px
+                            border: none
+                            box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                            padding: 0 15px
+                            // Text style
+                            color: #000000
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                        &_ru
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 25px
+                            text-transform: uppercase
+                    &-info
+                        display: flex
+                        justify-content: space-between
+                        margin-bottom: 20px
+                        &_mobileParagraph
+                            display: none
+                        &_paragraph
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 15px
+                            margin: 0
+                            &-number
+                                color: #810000
+                    &-rules
+                        margin-bottom: 20px
+                        &_paragraph
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 15px
+                            margin: 0
+                            &-link
+                                color: #810000
+                                position: relative
+                                text-decoration: none
+                                &::after
+                                    content: ''
+                                    position: absolute
+                                    bottom: -2px
+                                    left: 0
+                                    width: 100%
+                                    height: 1px
+                                    background-color: #810000
+                            &:first-child
+                                margin-bottom: 10px
+                    &-data
+                        margin-bottom: 20px
+                        display: flex
+                        justify-content: space-between
+                        &_input
+                            width: 320px
+                            height: 55px
+                            margin-right: 20px
+                            border-radius: 15px
+                            border: none
+                            box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                            padding: 0 15px
+                            // Text style
+                            color: #000000
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            &:last-child
+                    &-choosePay
+                        display: flex
+                        flex-direction: column
+                        margin-bottom: 20px
+                        align-items: center
+                        &_select
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 15px
+                            margin: 0
+                            margin-bottom: 20px
+                        &_box
+                            display: flex
+                            width: 120px
+                            height: 50px
+                            background-color: #fff
+                            box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                            border-radius: 15px
+                            &-choose
+                                width: 100%
+                                justify-content: space-around
+                                align-items: center
+                                display: flex
+                                &_radio
+                                    position: absolute
+                                    z-index: -1
+                                    opacity: 0
+                                    &:not(checked) + .dz-pay_box-inter_form-choosePay_box-choose_label
+                                        background-color: #c7c7c7
+                                    &:checked + .dz-pay_box-inter_form-choosePay_box-choose_label
+                                        background-color: #ad87f3
+                                &_label
+                                    width: 30px
+                                    height: 30px
+                                    border-radius: 50%
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    position: relative
+                                    cursor: pointer
+                                    &-dot
+                                        width: 10px
+                                        height: 10px
+                                        border-radius: 50%
+                                        background-color: #ffffff
+                    &-button
+                        &_link
+                            width: 380px
+                            border-radius: 50px
+                            border: none
+                            background-color: #7576a3
+                            height: 70px
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            cursor: pointer
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+
+#dz-secondInfo
+    .dz-secondInfo
+        &_flowersLeft
+            left: 50px
+        &_flowersRight
+            right: 0
+        &_box
+            width: 70%
+
+#dz-spy
+    overflow-y: visible
+    .dz-spy
+        display: flex   
+        justify-content: center
+        position: relative
+        padding-top: 0px
+        height: 100%
+        z-index: 3
+        align-items: center
+        &_bus
+            position: absolute
+            bottom: 0px
+            right: -430px
+        &_flowers
+            position: absolute
+            bottom: 0px
+            left: -150px
+        &_box
+            width: 60%
+            background-color: #f2ebeb
+            border-radius: 15px
+            box-shadow: 0 0 50px rgba(0, 0, 0, .3)
+            position: relative
+            display: flex
+            align-items: center
+            z-index: 4
+            flex-direction: column
+            padding: 20px 0
+            &-exit
+                position: absolute
+                top: 30px
+                right: 30px
+                &_icon
+                    width: 20px
+            &-inter
+                text-align: center
+                display: flex
+                height: 100%
+                flex-direction: column
+                align-items: center
+                &_title
+                    &-head
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 25px
+                        &_bold
+                            font-family: "CenturyGhotic - Bold", sans-serif
+                            font-weight: 700
+                            font-size: 30px
+                    &-subHead
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 20px
+                        &_bold
+                            font-family: "CenturyGhotic - Bold", sans-serif
+                            font-weight: 700
+                &_form
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    &-cash
+                        width: 60%
+                        margin-bottom: 20px
+                        text-align: left
+                        &_amount
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            margin-right: 20px
+                        &_data
+                            width: 180px
+                            height: 55px
+                            margin-right: 20px
+                            border-radius: 15px
+                            border: none
+                            box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                            padding: 0 15px
+                            // Text style
+                            color: #000000
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                        &_ride
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 24px
+                            text-transform: uppercase
+                            margin-right: 50px
+                        &_ru
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 21px
+                            text-transform: lowercase
+                    &-info
+                        width: 60%
+                        text-align: left
+                        margin-bottom: 20px
+                        &_paragraph
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 15px
+                            margin: 0
+                    &-rules
+                        margin-bottom: 20px
+                        &_paragraph
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 15px
+                            margin: 0
+                            &-link
+                                color: #810000
+                                position: relative
+                                text-decoration: none
+                                &::after
+                                    content: ''
+                                    position: absolute
+                                    bottom: -2px
+                                    left: 0
+                                    width: 100%
+                                    height: 1px
+                                    background-color: #810000
+                            &:first-child
+                                margin-bottom: 10px
+                    &-data
+                        margin-bottom: 20px
+                        display: flex
+                        justify-content: space-between
+                        &_input
+                            width: 320px
+                            height: 55px
+                            margin-right: 20px
+                            border-radius: 15px
+                            border: none
+                            box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                            padding: 0 15px
+                            // Text style
+                            color: #000000
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                    &-choosePay
+                        display: flex
+                        flex-direction: column
+                        margin-bottom: 20px
+                        align-items: center
+                        &_select
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 15px
+                            margin: 0
+                            margin-bottom: 20px
+                        &_box
+                            display: flex
+                            width: 120px
+                            height: 50px
+                            background-color: #fff
+                            box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                            border-radius: 15px
+                            &-choose
+                                width: 100%
+                                justify-content: space-around
+                                align-items: center
+                                display: flex
+                                &_radio
+                                    position: absolute
+                                    z-index: -1
+                                    opacity: 0
+                                    &:not(checked) + .dz-spy_box-inter_form-choosePay_box-choose_label
+                                        background-color: #c7c7c7
+                                    &:checked + .dz-spy_box-inter_form-choosePay_box-choose_label
+                                        background-color: #ad87f3
+                                &_label
+                                    width: 30px
+                                    height: 30px
+                                    border-radius: 50%
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    position: relative
+                                    cursor: pointer
+                                    &-dot
+                                        width: 10px
+                                        height: 10px
+                                        border-radius: 50%
+                                        background-color: #ffffff
+                    &-button
+                        &_link
+                            width: 450px
+                            border-radius: 50px
+                            border: none
+                            background-color: #7576a3
+                            height: 70px
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            cursor: pointer
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+
+#dz-card
+    overflow-y: visible
+    .dz-card
+        display: flex
+        justify-content: center
+        position: relative
+        padding-top: 0px
+        z-index: 3
+        height: 100%
+        &_busMobile
+            display: none
+        &_bus
+            position: absolute
+            bottom: -150px
+            right: -450px
+        &_flowers
+            position: absolute
+            bottom: -150px
+            left: -100px
+        &_box
+            width: 60%
+            background-color: #f2ebeb
+            border-radius: 15px
+            box-shadow: 0 0 50px rgba(0, 0, 0, .3)
+            position: relative
+            display: flex
+            height: 118%
+            align-items: center
+            z-index: 4
+            flex-direction: column
+            padding: 20px 0
+            &-exit
+                position: absolute
+                top: 30px
+                right: 30px
+                &_icon
+                    width: 20px
+            &-inter
+                text-align: center
+                display: flex
+                flex-direction: column
+                align-items: center
+                &_title
+                    &-head
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 25px
+                        &_bold
+                            font-family: "CenturyGhotic - Bold", sans-serif
+                            font-weight: 700
+                            font-size: 30px
+                            text-transform: uppercase
+                    &-subHead
+                        color: #070040
+                        font-family: "CenturyGhotic - Regular", sans-serif
+                        font-size: 20px
+                        &_bold
+                            font-family: "CenturyGhotic - Bold", sans-serif
+                            font-weight: 700
+                &_form
+                    &-cash
+                        padding-left: 50px
+                        text-align: left
+                        margin-bottom: 10px
+                        &_textMobile
+                            display: none
+                        &_ticket
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            margin-right: 20px
+                        &_choose
+                            display: flex
+                            &-ticket
+                                background-color: #fff
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                width: 450px
+                                height: 50px
+                                margin-right: 20px
+                                border-radius: 15px
+                                border: none
+                                box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                                &_radio
+                                    position: absolute
+                                    z-index: -1
+                                    opacity: 0
+                                    &:not(checked) + .dz-card_box-inter_form-cash_choose-ticket_label
+                                        background-color: #c7c7c7
+                                    &:checked + .dz-card_box-inter_form-cash_choose-ticket_label
+                                        background-color: #ad87f3
+                                &_label
+                                    width: 30px
+                                    height: 30px
+                                    border-radius: 50%
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    position: relative
+                                    cursor: pointer
+                                    &-dot
+                                        width: 10px
+                                        height: 10px
+                                        border-radius: 50%
+                                        background-color: #ffffff
+                                &_text
+                                    margin-left: 20px
+                                    color: #070040
+                                    font-family: "CenturyGhotic - Regular", sans-serif
+                                    cursor: pointer
+                                    font-size: 20px
+                            &-text
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 15px
+                    &-info
+                        padding-left: 50px
+                        padding-right: 20px
+                        display: flex
+                        justify-content: space-between
+                        margin-bottom: 10px
+                        text-align: left
+                        &_date, &_sum
+                            &-start
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 15px
+                                margin-bottom: 10px
+                            &-inter
+                                width: 200px
+                                height: 55px
+                                margin-right: 20px
+                                border-radius: 15px
+                                border: none
+                                box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                                padding: 0 15px
+                                // Text style
+                                color: #000000
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 20px
+                            &-text
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 15px
+                                margin-bottom: 10px
+                            &-ru
+                                text-transform: uppercase
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 25px
+                    &-rules
+                        margin-bottom: 10px
+                        &_paragraph
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 15px
+                            margin: 0
+                            &-link
+                                color: #810000
+                                position: relative
+                                text-decoration: none
+                                &::after
+                                    content: ''
+                                    position: absolute
+                                    bottom: -2px
+                                    left: 0
+                                    width: 100%
+                                    height: 1px
+                                    background-color: #810000
+                            &:first-child, &:nth-child(2)
+                                margin-bottom: 10px
+                    &-data
+                        margin-bottom: 20px
+                        display: flex
+                        justify-content: space-between
+                        &_input
+                            width: 320px
+                            height: 55px
+                            margin-right: 20px
+                            border-radius: 15px
+                            border: none
+                            box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                            padding: 0 15px
+                            // Text style
+                            color: #000000
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                    &-choosePay
+                        display: flex
+                        flex-direction: column
+                        margin-bottom: 20px
+                        align-items: center
+                        &_select
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 15px
+                            margin: 0
+                            margin-bottom: 20px
+                        &_box
+                            display: flex
+                            width: 120px
+                            height: 50px
+                            background-color: #fff
+                            box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                            border-radius: 15px
+                            &-choose
+                                width: 100%
+                                justify-content: space-around
+                                align-items: center
+                                display: flex
+                                &_radio
+                                    position: absolute
+                                    z-index: -1
+                                    opacity: 0
+                                    &:not(checked) + .dz-card_box-inter_form-choosePay_box-choose_label
+                                        background-color: #c7c7c7
+                                    &:checked + .dz-card_box-inter_form-choosePay_box-choose_label
+                                        background-color: #ad87f3
+                                &_label
+                                    width: 30px
+                                    height: 30px
+                                    border-radius: 50%
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    position: relative
+                                    cursor: pointer
+                                    &-dot
+                                        width: 10px
+                                        height: 10px
+                                        border-radius: 50%
+                                        background-color: #ffffff
+                    &-button
+                        margin-top: 40px
+                        &_link
+                            width: 380px
+                            border-radius: 50px
+                            border: none
+                            background-color: #7576a3
+                            height: 70px
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            cursor: pointer
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px

@@ -1,0 +1,3274 @@
+// Mobile media
+@media (min-height: 568px) and (max-height: 568px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position-x: 55% !important
+            background-size: cover
+            background-image: url("../img/bg-i-m.jpg")
+
+    #dz-home 
+        .dz-ship
+            bottom: -50px
+        .dz-home
+            height: 90%
+            &_box
+                width: 80%
+                height: calc(100vh - 15em)
+                &-hand
+                    display: none
+                &-mobileHand
+                    display: block
+                    max-width: 120%
+                    position: absolute
+                    left: -70px
+                    top: 10px
+                &-title
+                    top: -70px
+                    right: 0
+                    width: 100%
+                    &_first
+                        font-size: 24px !important
+                    &_second
+                        font-size: 21px !important
+                &-card
+                    left: 90px !important
+                    bottom: 40% !important
+                    &_inter
+                        &-number
+                            width: 150px !important
+                            height: 10px !important
+                            font-size: 13px
+                            border-radius: 10px
+                &-button
+                    bottom: 8%
+                    &_link
+                        width: 200px
+                        height: 40px
+
+    #dz-login
+        .dz-login
+            &_flowersLeft, &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                height: calc(100vh - 9em)
+                &-exit
+                    top: 10px
+                    right: 10px
+                &-inter
+                    &_title
+                        &-head
+                            margin-top: 25px
+                            text-align: left
+                            margin: 0
+                            margin-left: 0px
+                            font-size: 15px
+                        &-subHead
+                            font-size: 12px
+                            margin-bottom: 10px
+                    &_form
+                        &-section
+                            margin-bottom: 10px
+                            &_input
+                                border-radius: 10px
+                                height: 40px
+                                width: 220px
+                                // Text style
+                                font-size: 12px
+                            &_paragraph
+                                font-size: 10px
+                        &-sectionButton
+                            margin-bottom: 10px
+                            &_submit
+                                width: 240px
+                                height: 40px
+                    &_label
+                        justify-content: space-around
+                        &-text
+                            font-size: 12px
+
+    #dz-refill
+        .dz-refill
+            margin-top: 10px
+            &_box
+                &-title
+                    &_head
+                        font-size: 16px
+                    &_subHead
+                        font-size: 20px
+                &-mini
+                    width: 100%
+                    margin-bottom: 20px
+                    &:last-child
+                        margin-top: 0 !important
+                    &_head
+                        font-size: 15px
+                    &_subHead
+                        font-size: 15px
+                    &_bottom
+                        width: 100%
+                        &-firstText
+                            font-size: 18px
+                        &-secondText
+                            font-size: 20px
+                            img
+                                width: 30px
+            &_ship
+                bottom: -50px !important
+                right: -80px
+
+    #dz-info, #dz-secondInfo
+        .dz-info, .dz-secondInfo
+            padding-top: 20px
+            &_flowersMobile
+                display: flex
+                position: absolute
+                z-index: 3
+                bottom: -10px
+                left: 20%
+                width: 100%
+                img
+                    width: 60%
+            &_flowersLeft
+                display: none
+            &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                padding-top: 20px   
+                &-exit
+                    top: 20px
+                    right: 20px
+                    &_icon
+                        width: 20px
+                &-inter
+                    height: 100%
+                    &_title
+                        text-align: left
+                        width: 90%
+                        &-head
+                            font-size: 16px
+                        &-subHead
+                            font-size: 15px
+                    &_paragraph
+                        &-text
+                            font-size: 14px
+                        &-link
+                            width: 250px !important
+                            height: 50px
+                            background-color: #7576a3
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            text-decoration: none
+                        &:last-child
+                            margin-top: 10px
+                            margin-bottom: 30px
+
+    #dz-pay
+        overflow-y: visible
+        .dz-pay
+            padding-top: 400px
+            &_mobileBus
+                display: block
+                position: absolute
+                bottom: -480px
+                right: -150px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    display: flex
+                    height: 100%
+                    flex-direction: column
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            margin-bottom: 0px !important
+                            font-size: 20px
+                            &_bold
+                                margin-bottom: 0px !important
+                                display: block
+                                font-size: 25px
+                        &-subHead
+                            font-size: 20px
+                            margin-top: 10px
+                            margin-bottom: 10px
+                            &_bold
+                                font-size: 15px
+                                display: block
+                    &_form
+                        &-cash
+                            margin-bottom: 10px
+                            &_amount
+                                font-size: 20px
+                                display: block
+                                margin-bottom: 10px
+                            &_data
+                                width: 160px
+                                height: 55px
+                                margin-right: 20px
+                                border-radius: 15px
+                                border: none
+                                box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                                padding: 0 15px
+                                // Text style
+                                color: #000000
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 20px
+                            &_ru
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 25px
+                                text-transform: uppercase
+                        &-info
+                            display: block
+                            margin-bottom: 10px
+                            &_mobileParagraph
+                                display: block
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 15px
+                                margin: 0
+                            &_paragraph
+                                display: none
+                        &-rules
+                            margin-bottom: 10px
+                        &-data
+                            margin-bottom: 10px
+                            flex-direction: column
+                            &_input
+                                width: 250px
+                                height: 55px
+                                padding: 0 15px
+                                margin-bottom: 20px
+                                margin-right: 0
+                                &:last-child
+                                    margin-bottom: 0
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                            &_box
+                                &-choose
+                        &-button
+                            text-align: center
+                            margin-bottom: 10px
+                            &_link
+                                width: 90%
+                                height: 60px
+
+    #dz-secondInfo
+        .dz-secondInfo
+            &_box
+                width: 90% !important
+                &-inter
+                    &_paragraph
+                        &-link
+                            width: 250px !important
+
+    #dz-card
+        .dz-card
+            height: 118%
+            &_busMobile
+                display: block
+                position: absolute
+                right: -200px
+                bottom: -480px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                height: 172%
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    width: 100%
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            font-size: 25px
+                            margin-bottom: 10px
+                            &_bold
+                                font-size: 25px
+                                display: block
+                        &-subHead
+                            margin-top: 0
+                            margin-bottom: 10px
+                            font-size: 16px
+                            &_bold
+                                display: block
+                    &_form
+                        &-rules
+                            &_paragraph
+                                font-size: 14px
+                        &-cash
+                            padding-left: 0px
+                            text-align: left
+                            margin-bottom: 10px
+                            &_textMobile
+                                display: block
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 10px
+                            &_ticket
+                                font-size: 16px
+                                margin-right: 0px
+                                margin-top: 10px
+                                margin-bottom: 10px
+                            &_choose
+                                display: flex
+                                flex-direction: column
+                                &-ticket
+                                    width: 280px
+                                    &_text
+                                        margin-left: 10px
+                                        font-size: 14px
+                                &-text
+                                    display: none
+                        &-info
+                            padding-left: 0px
+                            flex-direction: column
+                            &_date, &_sum
+                                &-inter
+                                    margin-bottom: 10px
+                                    margin-right: 10px
+                                &-ru
+                                    font-size: 15px
+                        &-data
+                            flex-direction: column
+                            margin-bottom: 0px
+                            &_input
+                                width: 260px
+                                margin-right: 0px
+                                margin-bottom: 20px
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                        &-button
+                            margin-top: 30px
+                            &_link
+                                width: 280px
+                                height: 60px
+    
+@media (min-height: 667px) and (max-height: 667px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position-x: 55% !important
+            background-size: cover
+            background-image: url("../img/bg-i-m.jpg")
+
+    #dz-home 
+        .dz-ship
+            bottom: -50px
+        .dz-home
+            height: 90%
+            &_box
+                width: 80%
+                height: calc(100vh - 20em)
+                &-hand
+                    display: none
+                &-mobileHand
+                    display: block
+                    max-width: 120%
+                    position: absolute
+                    left: -90px
+                    top: 10px
+                &-title
+                    top: -80px
+                    right: 0
+                    width: 100%
+                    &_first
+                        font-size: 26px !important
+                    &_second
+                        font-size: 25px !important
+                &-card
+                    left: 100px !important
+                    bottom: 35% !important
+                    &_inter
+                        &-number
+                            width: 180px !important
+                            height: 15px !important
+                            font-size: 13px
+                            border-radius: 10px
+                &-button
+                    bottom: 8%
+                    &_link
+                        width: 220px
+                        height: 50px
+
+    #dz-login
+        .dz-login
+            &_flowersLeft, &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                height: calc(100vh - 7em)
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    &_title
+                        &-head
+                            margin-top: 25px
+                            margin-left: 10px
+                            text-align: left
+                            font-size: 18px
+                        &-subHead
+                            font-size: 19px
+                    &_form
+                        &-section
+                            &_input
+                                border-radius: 10px
+                                height: 50px
+                        &-sectionButton
+                            margin-bottom: 10px
+
+    #dz-refill
+        .dz-refill
+            margin-top: 10px
+            &_box
+                &-title
+                    &_head
+                        font-size: 18px
+                    &_subHead
+                        font-size: 25px
+                &-mini
+                    width: 100%
+                    margin-bottom: 20px
+                    &:last-child
+                        margin-top: 0 !important
+                    &_head
+                        font-size: 16px
+                    &_subHead
+                        font-size: 16px
+                    &_bottom
+                        width: 100%
+                        &-firstText
+                            font-size: 18px
+                        &-secondText
+                            font-size: 20px
+                            img
+                                width: 30px
+            &_ship
+                bottom: -50px !important
+                right: -80px
+
+    #dz-info, #dz-secondInfo
+        .dz-info, .dz-secondInfo
+            padding-top: 20px
+            &_flowersMobile
+                display: flex
+                position: absolute
+                z-index: 3
+                bottom: -40px
+                left: 20%
+                width: 100%
+                img
+                    width: 60%
+            &_flowersLeft
+                display: none
+            &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                padding-top: 20px   
+                &-exit
+                    top: 20px
+                    right: 20px
+                    &_icon
+                        width: 20px
+                &-inter
+                    height: 100%
+                    &_title
+                        text-align: left
+                        width: 90%
+                        &-head
+                            font-size: 18px
+                        &-subHead
+                            font-size: 15px
+                    &_paragraph
+                        &-text
+                            font-size: 14px
+                        &-link
+                            width: 300px !important
+                            height: 60px
+                            background-color: #7576a3
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            text-decoration: none
+                        &:last-child
+                            margin-top: 10px
+                            margin-bottom: 30px
+
+    #dz-pay
+        overflow-y: visible
+        .dz-pay
+            padding-top: 240px
+            &_mobileBus
+                display: block
+                position: absolute
+                bottom: -320px
+                right: -150px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    display: flex
+                    height: 100%
+                    flex-direction: column
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            margin-bottom: 0px !important
+                            font-size: 20px
+                            &_bold
+                                margin-bottom: 0px !important
+                                display: block
+                                font-size: 25px
+                        &-subHead
+                            font-size: 20px
+                            margin-top: 10px
+                            margin-bottom: 10px
+                            &_bold
+                                font-size: 18px
+                                display: block
+                    &_form
+                        &-cash
+                            margin-bottom: 10px
+                            &_amount
+                                font-size: 20px
+                                display: block
+                                margin-bottom: 10px
+                            &_data
+                                width: 200px
+                                height: 55px
+                                margin-right: 20px
+                                border-radius: 15px
+                                border: none
+                                box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                                padding: 0 15px
+                                // Text style
+                                color: #000000
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 20px
+                            &_ru
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 25px
+                                text-transform: uppercase
+                        &-info
+                            display: block
+                            margin-bottom: 10px
+                            &_mobileParagraph
+                                display: block
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 15px
+                                margin: 0
+                            &_paragraph
+                                display: none
+                        &-rules
+                            margin-bottom: 10px
+                        &-data
+                            margin-bottom: 10px
+                            flex-direction: column
+                            &_input
+                                width: 300px
+                                height: 55px
+                                padding: 0 15px
+                                margin-bottom: 20px
+                                margin-right: 0
+                                &:last-child
+                                    margin-bottom: 0
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                            &_box
+                                &-choose
+                        &-button
+                            text-align: center
+                            margin-bottom: 10px
+                            &_link
+                                width: 90%
+
+    #dz-secondInfo
+        .dz-secondInfo
+            &_box
+                width: 90% !important
+                &-inter
+                    &_paragraph
+                        &-link
+                            width: 300px !important
+
+    #dz-card
+        .dz-card
+            height: 118%
+            &_busMobile
+                display: block
+                position: absolute
+                right: -200px
+                bottom: -480px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                height: 138%
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    width: 100%
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            font-size: 25px
+                            margin-bottom: 10px
+                            &_bold
+                                display: block
+                        &-subHead
+                            margin-top: 0
+                            margin-bottom: 10px
+                            font-size: 18px
+                            &_bold
+                                display: block
+                    &_form
+                        &-rules
+                            &_paragraph
+                                font-size: 14px
+                        &-cash
+                            padding-left: 0px
+                            text-align: left
+                            margin-bottom: 10px
+                            &_textMobile
+                                display: block
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 12px
+                            &_ticket
+                                font-size: 18px
+                                margin-right: 0px
+                                margin-top: 10px
+                                margin-bottom: 10px
+                            &_choose
+                                display: flex
+                                flex-direction: column
+                                &-ticket
+                                    width: 335px
+                                    &_text
+                                        margin-left: 10px
+                                        font-size: 18px
+                                &-text
+                                    display: none
+                        &-info
+                            padding-left: 0px
+                            flex-direction: column
+                            &_date, &_sum
+                                
+                                &-inter
+                                    margin-bottom: 10px
+                        &-data
+                            flex-direction: column
+                            margin-bottom: 0px
+                            &_input
+                                width: 300px
+                                margin-right: 0px
+                                margin-bottom: 20px
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                        &-button
+                            margin-top: 30px
+                            &_link
+                                width: 340px
+
+@media (min-height: 736px) and (max-height: 736px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position-x: 55% !important
+            background-size: cover
+            background-image: url("../img/bg-i-m.jpg")
+
+    #dz-home 
+        .dz-ship
+            bottom: -50px
+        .dz-home
+            height: 90%
+            &_box
+                width: 80%
+                height: calc(100vh - 20em)
+                &-hand
+                    display: none
+                &-mobileHand
+                    display: block
+                    max-width: 120%
+                    position: absolute
+                    left: -90px
+                    top: 10px
+                &-title
+                    top: -80px
+                    right: 0
+                    width: 100%
+                    &_first
+                        font-size: 26px !important
+                    &_second
+                        font-size: 25px !important
+                &-card
+                    left: 125px !important
+                    bottom: 40% !important
+                    &_inter
+                        &-number
+                            width: 180px !important
+                            height: 15px !important
+                            font-size: 13px
+                            border-radius: 10px
+                &-button
+                    bottom: 14%
+                    &_link
+                        width: 220px
+                        height: 50px
+
+    #dz-login
+        .dz-login
+            &_flowersMobile
+                display: block
+                position: absolute
+                bottom: 0px
+                max-width: 60%
+            &_flowersLeft, &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                height: calc(100vh - 9.5em)
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    &_title
+                        &-head
+                            margin-left: 10px
+                            text-align: left
+                            font-size: 19px
+                        &-subHead
+                            font-size: 19px
+                    &_form
+                        &-section
+                            &_input
+                                border-radius: 10px
+                                height: 50px
+    
+    #dz-refill
+        overflow-y: hidden
+        .dz-refill
+            margin-top: 10px
+            &_box
+                &-title
+                    &_head
+                        font-size: 18px
+                    &_subHead
+                        font-size: 25px
+                &-mini
+                    width: 110%
+                    margin-bottom: 20px
+                    &:last-child
+                        margin-top: 0 !important
+                    &_head
+                        font-size: 16px
+                    &_subHead
+                        font-size: 16px
+                    &_bottom
+                        width: 100%
+                        &-firstText
+                            font-size: 18px
+                        &-secondText
+                            font-size: 20px
+                            img
+                                width: 30px
+            &_ship
+                bottom: -20px !important
+                right: -80px
+
+    #dz-info, #dz-secondInfo
+        .dz-info, .dz-secondInfo
+            padding-top: 20px
+            &_flowersMobile
+                display: flex
+                position: absolute
+                z-index: 3
+                bottom: -40px
+                left: 20%
+                width: 100%
+                img
+                    width: 60%
+            &_flowersLeft
+                display: none
+            &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                padding-top: 20px   
+                &-exit
+                    top: 20px
+                    right: 20px
+                    &_icon
+                        width: 20px
+                &-inter
+                    height: 100%
+                    &_title
+                        text-align: left
+                        width: 90%
+                        &-head
+                            font-size: 20px
+                        &-subHead
+                            font-size: 15px
+                    &_paragraph
+                        &-text
+                            font-size: 14px
+                        &-link
+                            width: 300px !important
+                            height: 60px
+                            background-color: #7576a3
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            text-decoration: none
+                        &:last-child
+                            margin-top: 10px
+                            margin-bottom: 30px
+
+    #dz-pay
+        overflow-y: visible
+        .dz-pay
+            padding-top: 120px
+            &_mobileBus
+                display: block
+                position: absolute
+                bottom: -200px
+                right: -150px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    display: flex
+                    height: 100%
+                    flex-direction: column
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            margin-bottom: 0px !important
+                            font-size: 20px
+                            &_bold
+                                margin-bottom: 0px !important
+                                display: block
+                                font-size: 25px
+                        &-subHead
+                            font-size: 20px
+                            margin-top: 10px
+                            margin-bottom: 10px
+                            &_bold
+                                font-size: 18px
+                                display: block
+                    &_form
+                        &-cash
+                            margin-bottom: 10px
+                            &_amount
+                                font-size: 20px
+                                display: block
+                                margin-bottom: 10px
+                            &_data
+                                width: 200px
+                                height: 55px
+                                margin-right: 20px
+                                border-radius: 15px
+                                border: none
+                                box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                                padding: 0 15px
+                                // Text style
+                                color: #000000
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 20px
+                            &_ru
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 25px
+                                text-transform: uppercase
+                        &-info
+                            display: block
+                            margin-bottom: 10px
+                            &_mobileParagraph
+                                display: block
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 15px
+                                margin: 0
+                            &_paragraph
+                                display: none
+                        &-rules
+                            margin-bottom: 10px
+                        &-data
+                            margin-bottom: 10px
+                            flex-direction: column
+                            &_input
+                                width: 340px
+                                height: 55px
+                                padding: 0 15px
+                                margin-bottom: 20px
+                                margin-right: 0
+                                &:last-child
+                                    margin-bottom: 0
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                            &_box
+                                &-choose
+                        &-button
+                            text-align: center
+                            margin-bottom: 10px
+                            &_link
+                                width: 90%
+
+    #dz-card
+        .dz-card
+            height: 118%
+            &_busMobile
+                display: block
+                position: absolute
+                right: -200px
+                bottom: -480px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                height: 128%
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    width: 100%
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            font-size: 25px
+                            margin-bottom: 10px
+                            &_bold
+                                display: block
+                        &-subHead
+                            margin-top: 0
+                            margin-bottom: 10px
+                            font-size: 20px
+                            &_bold
+                                display: block
+                    &_form
+                        &-cash
+                            padding-left: 0px
+                            text-align: left
+                            margin-bottom: 10px
+                            &_textMobile
+                                display: block
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 13px
+                            &_ticket
+                                font-size: 18px
+                                margin-right: 0px
+                                margin-top: 10px
+                                margin-bottom: 10px
+                            &_choose
+                                display: flex
+                                flex-direction: column
+                                &-ticket
+                                    width: 360px
+                                    &_text
+                                        font-size: 18px
+                                &-text
+                                    display: none
+                        &-info
+                            padding-left: 0px
+                            flex-direction: column
+                            &_date, &_sum
+                                &-inter
+                                    margin-bottom: 10px
+                        &-data
+                            flex-direction: column
+                            margin-bottom: 0px
+                            &_input
+                                width: 340px
+                                margin-right: 0px
+                                margin-bottom: 20px
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                        &-button
+                            margin-top: 30px
+                            &_link
+                                width: 370px
+
+@media (min-height: 740px) and (max-height: 740px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position-x: 55% !important
+            background-size: cover
+            background-image: url("../img/bg-i-m.jpg")
+
+    #dz-home 
+        .dz-ship
+            bottom: -50px
+        .dz-home
+            height: 90%
+            &_box
+                width: 80%
+                height: calc(100vh - 20em)
+                &-hand
+                    display: none
+                &-mobileHand
+                    display: block
+                    max-width: 120%
+                    position: absolute
+                    left: -90px
+                    top: 10px
+                &-title
+                    top: -80px
+                    right: 0
+                    width: 100%
+                    &_first
+                        font-size: 26px !important
+                    &_second
+                        font-size: 24px !important
+                &-card
+                    left: 90px !important
+                    bottom: 48% !important
+                    &_inter
+                        &-number
+                            width: 180px !important
+                            height: 15px !important
+                            font-size: 13px
+                            border-radius: 10px
+                &-button
+                    bottom: 14%
+                    &_link
+                        width: 220px
+                        height: 50px
+
+    #dz-login
+        .dz-login
+            &_flowersMobile
+                display: block
+                position: absolute
+                bottom: -40px
+                max-width: 60%
+            &_flowersLeft, &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                height: calc(100vh - 12em)
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    &_title
+                        &-head
+                            margin-left: 10px
+                            text-align: left
+                            font-size: 17px
+                        &-subHead
+                            font-size: 17px
+                    &_form
+                        &-section
+                            &_input
+                                border-radius: 10px
+                                height: 50px
+                                width: 250px
+                        &-sectionButton
+                            margin-bottom: 10px
+
+    #dz-refill
+        overflow-y: hidden
+        .dz-refill
+            margin-top: 10px
+            &_box
+                &-title
+                    &_head
+                        font-size: 18px
+                    &_subHead
+                        font-size: 25px
+                &-mini
+                    width: 100%
+                    margin-bottom: 20px
+                    &:last-child
+                        margin-top: 0 !important
+                    &_head
+                        font-size: 16px
+                    &_subHead
+                        font-size: 16px
+                    &_bottom
+                        width: 100%
+                        &-firstText
+                            font-size: 18px
+                        &-secondText
+                            font-size: 20px
+                            img
+                                width: 30px
+            &_ship
+                bottom: -20px !important
+                right: -80px
+
+    #dz-info, #dz-secondInfo
+        .dz-info, .dz-secondInfo
+            padding-top: 20px
+            &_flowersMobile
+                display: flex
+                position: absolute
+                z-index: 3
+                bottom: -40px
+                left: 20%
+                width: 100%
+                img
+                    width: 60%
+            &_flowersLeft
+                display: none
+            &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                padding-top: 20px   
+                &-exit
+                    top: 20px
+                    right: 20px
+                    &_icon
+                        width: 20px
+                &-inter
+                    height: 100%
+                    &_title
+                        text-align: left
+                        width: 90%
+                        &-head
+                            font-size: 18px
+                        &-subHead
+                            font-size: 15px
+                    &_paragraph
+                        &-text
+                            font-size: 14px
+                        &-link
+                            width: 300px !important
+                            height: 60px
+                            background-color: #7576a3
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            text-decoration: none
+                        &:last-child
+                            margin-top: 10px
+                            margin-bottom: 30px
+
+    #dz-pay
+        overflow-y: visible
+        .dz-pay
+            padding-top: 180px
+            &_mobileBus
+                display: block
+                position: absolute
+                bottom: -250px
+                right: -150px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    display: flex
+                    height: 100%
+                    flex-direction: column
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            margin-bottom: 0px !important
+                            font-size: 20px
+                            &_bold
+                                margin-bottom: 0px !important
+                                display: block
+                                font-size: 25px
+                        &-subHead
+                            font-size: 20px
+                            margin-top: 10px
+                            margin-bottom: 10px
+                            &_bold
+                                font-size: 18px
+                                display: block
+                    &_form
+                        &-cash
+                            margin-bottom: 10px
+                            &_amount
+                                font-size: 20px
+                                display: block
+                                margin-bottom: 10px
+                            &_data
+                                width: 200px
+                                height: 55px
+                                margin-right: 20px
+                                border-radius: 15px
+                                border: none
+                                box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                                padding: 0 15px
+                                // Text style
+                                color: #000000
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 20px
+                            &_ru
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 25px
+                                text-transform: uppercase
+                        &-info
+                            display: block
+                            margin-bottom: 10px
+                            &_mobileParagraph
+                                display: block
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 15px
+                                margin: 0
+                            &_paragraph
+                                display: none
+                        &-rules
+                            margin-bottom: 10px
+                        &-data
+                            margin-bottom: 10px
+                            flex-direction: column
+                            &_input
+                                width: 300px
+                                height: 55px
+                                padding: 0 15px
+                                margin-bottom: 20px
+                                margin-right: 0
+                                &:last-child
+                                    margin-bottom: 0
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                            &_box
+                                &-choose
+                        &-button
+                            text-align: center
+                            margin-bottom: 10px
+                            &_link
+                                width: 90%
+
+    #dz-secondInfo
+        .dz-secondInfo
+            &_box
+                width: 90% !important
+                &-inter
+                    &_paragraph
+                        &-link
+                            width: 300px !important
+
+    #dz-card
+        .dz-card
+            height: 118%
+            &_busMobile
+                display: block
+                position: absolute
+                right: -200px
+                bottom: -600px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                height: 148%
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    width: 100%
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            font-size: 25px
+                            margin-bottom: 10px
+                            &_bold
+                                font-size: 28px
+                                display: block
+                        &-subHead
+                            margin-top: 0
+                            margin-bottom: 10px
+                            font-size: 20px
+                            &_bold
+                                font-size: 18px
+                                display: block
+                    &_form
+                        &-rules
+                            &_paragraph
+                                font-size: 18px
+                        &-cash
+                            padding-left: 0px
+                            text-align: left
+                            margin-bottom: 10px
+                            &_textMobile
+                                display: block
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 13px
+                            &_ticket
+                                font-size: 18px
+                                margin-right: 0px
+                                margin-top: 10px
+                                margin-bottom: 10px
+                            &_choose
+                                display: flex
+                                flex-direction: column
+                                &-ticket
+                                    width: 320px
+                                    &_text
+                                        font-size: 16px
+                                        margin-left: 10px
+                                &-text
+                                    display: none
+                        &-info
+                            padding-left: 0px
+                            flex-direction: column
+                            &_date, &_sum
+                                &-inter
+                                    margin-bottom: 10px
+                        &-data
+                            flex-direction: column
+                            margin-bottom: 0px
+                            &_input
+                                width: 290px
+                                margin-right: 0px
+                                margin-bottom: 20px
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                        &-button
+                            margin-top: 30px
+                            &_link
+                                width: 320px
+
+@media (min-height: 812px) and (max-height: 812px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position-x: 55% !important
+            background-size: cover
+            background-image: url("../img/bg-i-m.jpg")
+
+    #dz-home 
+        .dz-ship
+            bottom: -50px
+        .dz-home
+            height: 90%
+            &_box
+                width: 80%
+                height: calc(100vh - 20em)
+                &-hand
+                    display: none
+                &-mobileHand
+                    display: block
+                    max-width: 120%
+                    position: absolute
+                    left: -90px
+                    top: 50px
+                &-title
+                    top: -80px
+                    right: 0
+                    width: 100%
+                    &_first
+                        font-size: 26px !important
+                    &_second
+                        font-size: 25px !important
+                &-card
+                    bottom: 45% !important
+                    &_inter
+                        &-number
+                            width: 180px !important
+                            height: 15px !important
+                            font-size: 13px
+                            border-radius: 10px
+                &-button
+                    bottom: 14%
+                    &_link
+                        width: 220px
+                        height: 50px
+
+    #dz-login
+        .dz-login
+            &_flowersMobile
+                display: block
+                position: absolute
+                bottom: -80px
+                max-width: 60%
+            &_flowersLeft, &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                height: calc(100vh - 14.5em)
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    &_title
+                        &-head
+                            margin-left: 10px
+                            text-align: left
+                            font-size: 18px
+                        &-subHead
+                            font-size: 18px
+                    &_form
+                        &-section
+                            &_input
+                                border-radius: 10px
+                                height: 50px
+
+    #dz-refill
+        overflow-y: hidden
+        .dz-refill
+            margin-top: 20px
+            &_box
+                &-title
+                    &_head
+                        font-size: 18px
+                    &_subHead
+                        font-size: 25px
+                &-mini
+                    width: 100%
+                    margin-bottom: 20px
+                    &:last-child
+                        margin-top: 0 !important
+                    &_head
+                        font-size: 16px
+                    &_subHead
+                        font-size: 16px
+                    &_bottom
+                        width: 100%
+                        &-secondText
+                            img
+                                width: 30px
+            &_ship
+                bottom: -80px !important
+                right: -80px
+
+    #dz-info, #dz-secondInfo
+        .dz-info, .dz-secondInfo
+            padding-top: 20px
+            &_flowersMobile
+                display: flex
+                position: absolute
+                z-index: 3
+                bottom: -40px
+                left: 20%
+                width: 100%
+                img
+                    width: 60%
+            &_flowersLeft
+                display: none
+            &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                padding-top: 20px   
+                &-exit
+                    top: 20px
+                    right: 20px
+                    &_icon
+                        width: 20px
+                &-inter
+                    height: 100%
+                    &_title
+                        text-align: left
+                        width: 90%
+                        &-head
+                            font-size: 18px
+                        &-subHead
+                            font-size: 15px
+                    &_paragraph
+                        &-text
+                            font-size: 14px
+                        &-link
+                            width: 300px !important
+                            height: 60px
+                            background-color: #7576a3
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            text-decoration: none
+                        &:last-child
+                            margin-top: 10px
+                            margin-bottom: 30px
+
+    #dz-pay
+        overflow-y: visible
+        .dz-pay
+            padding-top: 120px
+            &_mobileBus
+                display: block
+                position: absolute
+                bottom: -200px
+                right: -150px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    display: flex
+                    height: 100%
+                    flex-direction: column
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            margin-bottom: 0px !important
+                            font-size: 20px
+                            &_bold
+                                margin-bottom: 0px !important
+                                display: block
+                                font-size: 25px
+                        &-subHead
+                            font-size: 20px
+                            margin-top: 10px
+                            margin-bottom: 10px
+                            &_bold
+                                font-size: 18px
+                                display: block
+                    &_form
+                        &-cash
+                            margin-bottom: 10px
+                            &_amount
+                                font-size: 20px
+                                display: block
+                                margin-bottom: 10px
+                            &_data
+                                width: 200px
+                                height: 55px
+                                margin-right: 20px
+                                border-radius: 15px
+                                border: none
+                                box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                                padding: 0 15px
+                                // Text style
+                                color: #000000
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 20px
+                            &_ru
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 25px
+                                text-transform: uppercase
+                        &-info
+                            display: block
+                            margin-bottom: 10px
+                            &_mobileParagraph
+                                display: block
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 15px
+                                margin: 0
+                            &_paragraph
+                                display: none
+                        &-rules
+                            margin-bottom: 10px
+                        &-data
+                            margin-bottom: 10px
+                            flex-direction: column
+                            &_input
+                                width: 300px
+                                height: 55px
+                                padding: 0 15px
+                                margin-bottom: 20px
+                                margin-right: 0
+                                &:last-child
+                                    margin-bottom: 0
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                            &_box
+                                &-choose
+                        &-button
+                            text-align: center
+                            margin-bottom: 10px
+                            &_link
+                                width: 90%
+
+    #dz-secondInfo
+        .dz-secondInfo
+            &_box
+                width: 90% !important
+                &-inter
+                    &_paragraph
+                        &-link
+                            width: 300px !important
+
+    #dz-card
+        .dz-card
+            height: 118%
+            &_busMobile
+                display: block
+                position: absolute
+                right: -200px
+                bottom: -400px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    width: 100%
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            font-size: 25px
+                            margin-bottom: 10px
+                            &_bold
+                                display: block
+                                font-size: 28px
+                        &-subHead
+                            margin-top: 0
+                            margin-bottom: 10px
+                            font-size: 20px
+                            &_bold
+                                display: block
+                                font-size: 18px
+                    &_form
+                        &-cash
+                            padding-left: 0px
+                            text-align: left
+                            margin-bottom: 10px
+                            &_textMobile
+                                display: block
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 12px
+                            &_ticket
+                                font-size: 18px
+                                margin-right: 0px
+                                margin-top: 10px
+                                margin-bottom: 10px
+                            &_choose
+                                display: flex
+                                flex-direction: column
+                                &-ticket
+                                    width: 340px
+                                    &_text
+                                        margin-left: 10px
+                                        font-size: 18px
+                                &-text
+                                    display: none
+                        &-info
+                            padding-left: 0px
+                            flex-direction: column
+                            &_date, &_sum
+                                &-inter
+                                    margin-bottom: 10px
+                        &-data
+                            flex-direction: column
+                            margin-bottom: 0px
+                            &_input
+                                width: 300px
+                                margin-right: 0px
+                                margin-bottom: 20px
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                        &-button
+                            margin-top: 30px
+                            &_link
+                                width: 340px
+
+@media (min-height: 846px) and (max-height: 846px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position-x: 55% !important
+            background-size: cover
+            background-image: url("../img/bg-i-m.jpg")
+
+    #dz-home 
+        .dz-ship
+            bottom: -50px
+        .dz-home
+            height: 90%
+            &_box
+                width: 80%
+                height: calc(100vh - 20em)
+                &-hand
+                    display: none
+                &-mobileHand
+                    display: block
+                    max-width: 120%
+                    position: absolute
+                    left: -90px
+                    top: 50px
+                &-title
+                    top: -80px
+                    right: 0
+                    width: 100%
+                    &_first
+                        font-size: 26px !important
+                    &_second
+                        font-size: 25px !important
+                &-card
+                    left: 120px !important
+                    bottom: 45% !important
+                    &_inter
+                        &-number
+                            width: 200px !important
+                            height: 15px !important
+                            font-size: 13px
+                            border-radius: 10px
+                &-button
+                    bottom: 14%
+                    &_link
+                        width: 220px
+                        height: 50px
+
+    #dz-login
+        .dz-login
+            &_flowersMobile
+                display: block
+                position: absolute
+                bottom: -80px
+                max-width: 60%
+            &_flowersLeft, &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                height: calc(100vh - 18em)
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    &_title
+                        &-head
+                            margin-left: 10px
+                            text-align: left
+                            font-size: 20px
+                        &-subHead
+                            font-size: 20px
+                    &_form
+                        &-section
+                            &_input
+                                border-radius: 10px
+                                height: 50px
+                                width: 280px
+                        &-sectionButton
+                            margin-bottom: 10px
+
+    #dz-refill
+        overflow-y: hidden
+        .dz-refill
+            margin-top: 20px
+            &_box
+                &-title
+                    &_head
+                        font-size: 20px
+                    &_subHead
+                        font-size: 25px
+                &-mini
+                    width: 100%
+                    margin-bottom: 40px
+                    &:last-child
+                        margin-top: 0 !important
+                    &_head
+                        font-size: 18px
+                    &_subHead
+                        font-size: 18px
+                    &_bottom
+                        width: 100%
+                        &-secondText
+                            img
+                                width: 30px
+            &_ship
+                bottom: -60px !important
+                right: -80px
+
+    #dz-info, #dz-secondInfo
+        overflow-y: hidden
+        .dz-info, .dz-secondInfo
+            padding-top: 20px
+            &_flowersMobile
+                display: flex
+                position: absolute
+                z-index: 3
+                bottom: -60px
+                left: 20%
+                width: 100%
+                img
+                    width: 60%
+            &_flowersLeft
+                display: none
+            &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                padding-top: 20px   
+                &-exit
+                    top: 20px
+                    right: 20px
+                    &_icon
+                        width: 20px
+                &-inter
+                    height: 100%
+                    &_title
+                        text-align: left
+                        width: 90%
+                        &-head
+                            font-size: 20px
+                        &-subHead
+                            font-size: 15px
+                    &_paragraph
+                        &-text
+                            font-size: 14px
+                        &-link
+                            width: 300px !important
+                            height: 60px
+                            background-color: #7576a3
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            text-decoration: none
+                        &:last-child
+                            margin-top: 10px
+                            margin-bottom: 30px
+
+    #dz-pay
+        overflow-y: visible
+        .dz-pay
+            padding-top: 60px
+            &_mobileBus
+                display: block
+                position: absolute
+                bottom: -150px
+                right: -150px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    display: flex
+                    height: 100%
+                    flex-direction: column
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            margin-bottom: 0px !important
+                            font-size: 20px
+                            &_bold
+                                margin-bottom: 0px !important
+                                display: block
+                                font-size: 25px
+                        &-subHead
+                            font-size: 20px
+                            margin-top: 10px
+                            margin-bottom: 10px
+                            &_bold
+                                font-size: 18px
+                                display: block
+                    &_form
+                        &-cash
+                            margin-bottom: 10px
+                            &_amount
+                                font-size: 20px
+                                display: block
+                                margin-bottom: 10px
+                            &_data
+                                width: 200px
+                                height: 55px
+                                margin-right: 20px
+                                border-radius: 15px
+                                border: none
+                                box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                                padding: 0 15px
+                                // Text style
+                                color: #000000
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 20px
+                            &_ru
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 25px
+                                text-transform: uppercase
+                        &-info
+                            display: block
+                            margin-bottom: 10px
+                            &_mobileParagraph
+                                display: block
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 15px
+                                margin: 0
+                            &_paragraph
+                                display: none
+                        &-rules
+                            margin-bottom: 10px
+                        &-data
+                            margin-bottom: 10px
+                            flex-direction: column
+                            &_input
+                                width: 340px
+                                height: 55px
+                                padding: 0 15px
+                                margin-bottom: 20px
+                                margin-right: 0
+                                &:last-child
+                                    margin-bottom: 0
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                            &_box
+                                &-choose
+                        &-button
+                            text-align: center
+                            margin-bottom: 10px
+                            &_link
+                                width: 90%
+
+    #dz-secondInfo
+        overflow-y: visible
+        .dz-secondInfo
+            &_box
+                width: 90% !important
+                &-inter
+                    &_paragraph
+                        &-link
+                            width: 350px !important
+
+    #dz-card
+        .dz-card
+            height: 118%
+            &_busMobile
+                display: block
+                position: absolute
+                right: -200px
+                bottom: -400px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                height: 120%
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    width: 100%
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            font-size: 25px
+                            margin-bottom: 10px
+                            &_bold
+                                display: block
+                                font-size: 30px
+                        &-subHead
+                            margin-top: 0
+                            margin-bottom: 10px
+                            font-size: 20px
+                            &_bold
+                                display: block
+                                font-size: 20px
+                    &_form
+                        &-rules
+                            &_paragraph
+                                font-size: 18px
+                        &-cash
+                            padding-left: 0px
+                            text-align: left
+                            margin-bottom: 10px
+                            &_textMobile
+                                display: block
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 12px
+                            &_ticket
+                                font-size: 18px
+                                margin-right: 0px
+                                margin-top: 10px
+                                margin-bottom: 10px
+                            &_choose
+                                display: flex
+                                flex-direction: column
+                                &-ticket
+                                    width: 370px
+                                    &_text
+                                        margin-left: 10px
+                                        font-size: 18px
+                                &-text
+                                    display: none
+                        &-info
+                            padding-left: 0px
+                            flex-direction: column
+                            &_date, &_sum
+                                &-inter
+                                    margin-bottom: 10px
+                        &-data
+                            flex-direction: column
+                            margin-bottom: 0px
+                            &_input
+                                width: 340px
+                                margin-right: 0px
+                                margin-bottom: 20px
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                        &-button
+                            margin-top: 30px
+                            &_link
+                                width: 360px
+
+@media (min-height: 896px) and (max-height: 896px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position-x: 55% !important
+            background-size: cover
+            background-image: url("../img/bg-i-m.jpg")
+
+    #dz-home 
+        .dz-ship
+            bottom: -50px
+        .dz-home
+            height: 90%
+            &_box
+                width: 80%
+                height: calc(100vh - 30em)
+                &-hand
+                    display: none
+                &-mobileHand
+                    display: block
+                    max-width: 120%
+                    position: absolute
+                    left: -90px
+                    top: 50px
+                &-title
+                    top: -80px
+                    right: 0
+                    width: 100%
+                    &_first
+                        font-size: 26px !important
+                    &_second
+                        font-size: 25px !important
+                &-card
+                    left: 130px !important
+                    bottom: 30% !important
+                    &_inter
+                        &-number
+                            width: 180px !important
+                            height: 15px !important
+                            font-size: 13px
+                            border-radius: 10px
+                &-button
+                    bottom: 5%
+                    &_link
+                        width: 220px
+                        height: 55px
+
+    #dz-login
+        .dz-login
+            &_flowersMobile
+                display: block
+                position: absolute
+                bottom: -80px
+                max-width: 60%
+            &_flowersLeft, &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                height: calc(100vh - 21em)
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    &_title
+                        &-head
+                            margin-left: 10px
+                            text-align: left
+                            font-size: 19px
+                        &-subHead
+                            font-size: 20px
+                    &_form
+                        &-section
+                            &_input
+                                border-radius: 10px
+                                height: 50px
+
+    #dz-refill
+        overflow-y: hidden
+        .dz-refill
+            margin-top: 20px
+            &_box
+                &-title
+                    &_head
+                        font-size: 20px
+                    &_subHead
+                        font-size: 25px
+                &-mini
+                    width: 100%
+                    margin-bottom: 40px
+                    &:last-child
+                        margin-top: 0 !important
+                    &_head
+                        font-size: 18px
+                    &_subHead
+                        font-size: 18px
+                    &_bottom
+                        width: 100%
+            &_ship
+                bottom: -80px !important
+                right: -80px
+
+    #dz-info, #dz-secondInfo
+        .dz-info, .dz-secondInfo
+            padding-top: 20px
+            &_flowersMobile
+                display: flex
+                position: absolute
+                z-index: 3
+                bottom: -60px
+                left: 20%
+                width: 100%
+                img
+                    width: 60%
+            &_flowersLeft
+                display: none
+            &_flowersRight
+                display: none
+            &_box
+                width: 90%
+                padding-top: 20px   
+                &-exit
+                    top: 20px
+                    right: 20px
+                    &_icon
+                        width: 20px
+                &-inter
+                    height: 100%
+                    &_title
+                        text-align: left
+                        width: 90%
+                        &-head
+                            font-size: 20px
+                        &-subHead
+                            font-size: 15px
+                    &_paragraph
+                        &-text
+                            font-size: 14px
+                        &-link
+                            width: 300px !important
+                            height: 60px
+                            background-color: #7576a3
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            text-decoration: none
+                        &:last-child
+                            margin-top: 10px
+                            margin-bottom: 30px
+
+    #dz-pay
+        overflow-y: visible
+        .dz-pay
+            &_mobileBus
+                display: block
+                position: absolute
+                bottom: -80px
+                right: -150px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    display: flex
+                    height: 100%
+                    flex-direction: column
+                    align-items: flex-start
+                    &_title
+                        &-head
+                            margin-bottom: 0px !important
+                            font-size: 20px
+                            &_bold
+                                margin-bottom: 0px !important
+                                display: block
+                                font-size: 25px
+                        &-subHead
+                            font-size: 20px
+                            margin-top: 10px
+                            margin-bottom: 10px
+                            &_bold
+                                display: block
+                    &_form
+                        &-cash
+                            margin-bottom: 10px
+                            &_amount
+                                font-size: 20px
+                                display: block
+                                margin-bottom: 10px
+                            &_data
+                                width: 200px
+                                height: 55px
+                                margin-right: 20px
+                                border-radius: 15px
+                                border: none
+                                box-shadow: 0 3px 10px rgba(158, 129, 134, 1)
+                                padding: 0 15px
+                                // Text style
+                                color: #000000
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 20px
+                            &_ru
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 25px
+                                text-transform: uppercase
+                        &-info
+                            display: block
+                            margin-bottom: 10px
+                            &_mobileParagraph
+                                display: block
+                                color: #070040
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 15px
+                                margin: 0
+                            &_paragraph
+                                display: none
+                        &-rules
+                            margin-bottom: 10px
+                        &-data
+                            margin-bottom: 10px
+                            flex-direction: column
+                            &_input
+                                width: 320px
+                                height: 55px
+                                padding: 0 15px
+                                margin-bottom: 20px
+                                &:last-child
+                                    margin-bottom: 0
+                        &-choosePay
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                            &_box
+                                &-choose
+                        &-button
+                            text-align: center
+                            margin-bottom: 10px
+                            &_link
+                                width: 90%
+
+    #dz-secondInfo
+        .dz-secondInfo
+            &_box
+                &-inter
+                    &_title
+                        &-head
+                            font-size: 18px
+
+    #dz-card
+        .dz-card
+            height: 105%
+            &_busMobile
+                display: block
+                position: absolute
+                right: -200px
+                bottom: -400px
+            &_bus, &_flowers
+                display: none
+            &_box
+                width: 90% !important
+                padding: 10px
+                &-exit
+                    top: 20px
+                    right: 20px
+                &-inter
+                    text-align: left
+                    &_title
+                        &-head
+                            font-size: 25px
+                            margin-bottom: 10px
+                            &_bold
+                                display: block
+                                font-size: 30px
+                        &-subHead
+                            margin-top: 0
+                            margin-bottom: 10px
+                            font-size: 20px
+                            &_bold
+                                display: block
+                    &_form
+                        &-cash
+                            padding-left: 10px
+                            text-align: left
+                            margin-bottom: 10px
+                            &_textMobile
+                                display: block
+                                font-family: "CenturyGhotic - Regular", sans-serif
+                                font-size: 13px
+                            &_ticket
+                                margin-right: 0px
+                                margin-top: 10px
+                                margin-bottom: 10px
+                            &_choose
+                                display: flex
+                                flex-direction: column
+                                &-ticket
+                                    width: 360px
+                                    &_text
+                                        margin-left: 20px
+                                        font-size: 18px
+                                &-text
+                                    display: none
+                        &-info
+                            padding-left: 10px
+                            flex-direction: column
+                            &_date, &_sum
+                                &-inter
+                                    margin-bottom: 10px
+                        &-rules
+                            padding-left: 10px
+                        &-data
+                            padding-left: 10px
+                            flex-direction: column
+                            margin-bottom: 0px
+                            &_input
+                                width: 340px
+                                margin-right: 0px
+                                margin-bottom: 20px
+                        &-choosePay
+                            padding-left: 10px
+                            align-items: flex-start
+                            &_select
+                                margin-bottom: 10px
+                        &-button
+                            margin-top: 30px
+                            text-align: center
+                            &_link
+                                width: 360px
+
+// Desktop media  
+@media (min-width: 1020px) and (max-width: 1030px)  
+    #dz-home 
+        .dz-home
+            height: 90%
+            &_box
+                height: calc(100vh - 20em)
+                &-hand
+                    left: -200px !important
+                    width: 800px !important
+                &-card
+                    bottom: 30% !important
+                    left: 75px !important
+                    &_inter
+                        &-number
+                            width: 350px !important
+                            height: 30px
+                &-title
+                    right: 30px
+                    &_first
+                        font-size: 30px !important
+                    &_second
+                        font-size: 30px !important
+                &-button
+                    bottom: 20%
+                    right: 5%
+
+    #dz-login
+        .dz-login
+            &_box
+                height: calc(100vh - 14em)
+                &-inter
+                    &_title
+                        &-head
+                            font-size: 30px
+
+    #dz-refill
+        .dz-refill
+            margin-top: 20px
+            &_box
+                &-mini
+                    &:last-child
+                        margin-top: 0px !important
+            &_ship
+                bottom: -80px !important
+
+    #dz-info, #dz-secondInfo
+        overflow-y: visible
+        .dz-info, .dz-secondInfo
+            display: flex
+            justify-content: center
+            position: relative
+            z-index: 3
+            padding-top: 0
+            &_flowersMobile
+                display: none
+            &_flowersLeft
+                position: absolute
+                z-index: 3
+                top: 30%
+                left: 50px !important
+                img
+                    width: 80%
+            &_flowersRight
+                position: absolute
+                z-index: 3
+                top: 30%
+                right: 20px !important
+                img
+                    width: 80%
+            &_box
+                width: 60%
+                background-color: #f2ebeb
+                border-radius: 15px
+                box-shadow: 0 0 50px rgba(0, 0, 0, .3)
+                position: relative
+                display: flex
+                align-items: center
+                z-index: 4
+                flex-direction: column
+                padding-top: 20px   
+                &-exit
+                    position: absolute
+                    top: 30px
+                    right: 30px
+                    &_icon
+                        width: 20px
+                &-inter
+                    text-align: center
+                    display: flex
+                    height: 100%
+                    flex-direction: column
+                    align-items: center
+                    &_title
+                        &-head
+                            color: #070040
+                            font-family: "CenturyGhotic - Bold", sans-serif
+                            font-weight: 700
+                            font-size: 35px
+                            text-transform: uppercase
+                            margin: 0
+                            margin-bottom: 10px
+                        &-subHead
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            margin: 0
+                            margin-bottom: 15px
+                    &_paragraph
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        &-icon
+                            width: 70px
+                            height: 70px
+                            border-radius: 50%
+                            background-color: #d3d4f5
+                            display: flex
+                            justify-content: center
+                            box-shadow: 0 0 20px 4px rgba(174, 162, 187, 1)
+                            align-items: center
+                            img
+                                width: 33px
+                        &-text
+                            color: #070040
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            margin: 0
+                            margin-top: 15px
+                            margin-bottom: 15px
+                        &-link
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            border-radius: 50px
+                            width: 400px
+                            height: 80px
+                            background-color: #7576a3
+                            box-shadow: 0px 0px 10px 4px rgba(153, 103, 130, 1)
+                            // Text style
+                            color: #ffffff
+                            font-family: "CenturyGhotic - Regular", sans-serif
+                            font-size: 20px
+                            text-decoration: none
+                        &:last-child
+                            margin-top: 10px
+                            margin-bottom: 30px
+
+    #dz-pay
+        .dz-pay
+            &_bus
+                right: -520px
+                img
+                    width: 80%
+            &_flowers
+                bottom: 0px
+                left: -200px
+                img
+                    width: 80%
+            &_box
+                width: 65%
+                &-inter
+                    &_form
+                        &-data
+                            justify-content: space-around
+                            &_input
+                                width: 280px
+                                &:last-child
+                                    margin-right: 0
+
+    #dz-secondInfo
+        .dz-secondInfo
+            margin-top: 20px
+            &_flowersLeft
+                left: 0px
+            &_flowersRight
+                right: -50px
+            &_box
+                width: 80%
+
+    #dz-card
+        .dz-card
+            &_bus
+                right: -520px
+                img
+                    width: 80%
+            &_flowers
+                left: -100px
+                img
+                    width: 80%
+            &_box
+                width: 70%     
+
+    #dz-card
+        .dz-card
+            margin-top: 20px
+            &_bus
+                right: -520px
+                img
+                    width: 80%
+            &_flowers
+                left: -100px
+                img
+                    width: 80%
+            &_box
+                &-inter
+                    &_form
+                        &-data
+                            justify-content: space-around
+                            &_input
+                                width: 290px
+                                margin-bottom: 20px
+                                &:last-child
+                                    margin-right: 0
+
+@media screen and (max-width: 1280px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position: 38% 35%
+
+    #dz-home 
+        .dz-home
+            &_box
+                width: 90%
+                &-hand
+                    top: 15%
+                    left: -240px
+                    width: 1000px
+                &-card
+                    bottom: 26%
+                    left: 98px 
+                    &_inter
+                        &-number
+                            width: 450px
+                            height: 35px
+                &-title
+                    &_first
+                        font-size: 35px
+                    &_second
+                        font-size: 35px
+                &-button
+                    right: 5%
+
+    #dz-refill
+        .dz-refill
+            &_box
+                &-mini
+                    &:last-child
+                        margin-top: 100px
+            &_ship
+                bottom: 250px
+
+    #dz-info
+        .dz-info
+            &_flowersLeft
+                left: 110px
+            &_flowersRight
+                right: 60px
+            &_box
+                &-inter
+                    &_paragraph
+                        &-link
+                            width: 500px
+
+    #dz-pay
+        .dz-pay
+            &_bus
+                right: -520px
+                img
+                    width: 80%
+            &_flowers
+                bottom: 0px
+                left: -200px
+                img
+                    width: 80%
+            &_box
+                width: 65%
+
+    #dz-secondInfo
+        .dz-secondInfo
+            margin-top: 20px
+            &_flowersLeft
+                left: 0px
+            &_flowersRight
+                right: -50px
+            &_box
+                width: 80%
+
+    #dz-card
+        .dz-card
+            margin-top: 20px
+            &_bus
+                right: -520px
+                img
+                    width: 80%
+            &_flowers
+                left: -100px
+                img
+                    width: 80%
+            &_box
+                width: 70%
+    
+@media (min-width: 1400px) and (max-width: 1410px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position: 35% 40%
+
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        .dz-nav
+            &_right
+                margin-top: 50px
+                margin-right: 50px
+                &-lang
+                    &_text
+                        font-size: 25px
+                        &:after
+                            width: 72px
+                &-burger
+                    &_link
+                        &-icon
+                            width: 75px
+                            height: 5px
+                            margin-bottom: 10px
+        .dz-ship
+            bottom: -50px
+        .dz-home
+            height: 90%
+            &_box
+                width: 90%
+                height: calc(100vh - 28em)
+                &-hand
+                    top: 15%
+                    left: -220px
+                    width: 1100px
+                &-card
+                    bottom: 28%
+                    left: 160px 
+                    &_inter
+                        &-number
+                            width: 480px
+                            height: 35px
+                &-title
+                    &_first
+                        font-size: 35px
+                    &_second
+                        font-size: 35px
+                &-button
+                    right: 5%
+
+    #dz-login
+        .dz-login
+            &_flowersLeft
+                top: 30%
+                left: 30px
+                img
+                    width: 90%
+            &_flowersRight
+                top: 30%
+                right: 0
+                img
+                    width: 90%
+            &_box
+                width: 70%
+                height: calc(100vh - 15em)
+                &-inter
+                    &_form
+                        &-section
+                            margin-bottom: 20px
+                            &_input
+                                width: 450px
+                                height: 60px
+                                // Text style
+                                font-size: 20px
+                            &_paragraph
+                                font-size: 16px
+                        &-sectionButton
+                            &_submit
+                                width: 470px
+                                height: 80px
+                                // Text style
+                                font-size: 25px
+                    &_label
+                        width: 480px
+                        &-text
+                            font-size: 20px
+
+    #dz-refill
+        .dz-refill
+            &_box
+                &-title
+                    &_head
+                        font-size: 30px
+                    &_subHead
+                        font-size: 32px
+                        margin: 20px 0
+                &-mini
+                    padding: 20px 0
+                    &_head
+                        font-size: 30px
+                    &_subHead
+                        font-size: 22px
+                    &_bottom
+                        width: 80%
+                        &-firstText
+                            font-size: 22px
+            &_ship
+                bottom: -100px
+
+    #dz-info
+        .dz-info
+            &_flowersLeft
+                left: 130px
+            &_flowersRight
+                right: 80px
+
+    #dz-pay
+        .dz-pay
+            &_bus
+                bottom: 80px
+                right: -520px
+            &_flowers
+                bottom: 20px
+                left: -300px
+            &_box
+                width: 60%
+                padding: 50px 0
+                &-inter
+                    &_form
+                        &-button
+                            &_link
+                                margin-top: 20px
+
+    #dz-secondInfo
+        .dz-secondInfo
+            height: 100%
+            align-items: center
+            &_flowersLeft
+                left: 0px
+                img
+                    width: 100%
+            &_flowersRight
+                right: 0px
+                img
+                    width: 100%
+            &_box
+                width: 75%
+
+    #dz-spy
+        .dz-spy
+            &_box
+                padding: 50px 0
+                &-inter
+                    &_form
+                        &-button
+                            &_link
+                                margin-top: 20px
+
+    #dz-card
+        overflow-y: hidden
+        .dz-card
+            align-items: center
+            &_bus
+                bottom: 0px
+            &_flowers
+                bottom: 0px
+            &_box
+                width: 65%
+                height: 75%
+
+@media screen and (min-width: 1440px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position: 35% 50%
+
+    #dz-home, #dz-login, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        .dz-nav
+            &_right
+                margin-top: 50px
+                margin-right: 50px
+                &-lang
+                    &_text
+                        font-size: 25px
+                        &:after
+                            width: 72px
+                &-burger
+                    &_link
+                        &-icon
+                            width: 75px
+                            height: 5px
+                            margin-bottom: 10px
+        .dz-home
+            height: 90%
+            &_box
+                width: 90%
+                height: calc(100vh - 20em)
+                &-hand
+                    top: 15%
+                    left: -220px
+                    width: 1100px
+                &-card
+                    bottom: 27%
+                    left: 160px 
+                    &_inter
+                        &-number
+                            width: 480px
+                            height: 35px
+                &-title
+                    &_first
+                        font-size: 40px
+                    &_second
+                        font-size: 40px
+                &-button
+                    right: 5%
+                    &_link
+                        width: 300px
+                        height: 80px
+                        // Text style
+                        font-size: 25px
+
+    #dz-login
+        .dz-login
+            &_flowersLeft
+                top: 27%
+                left: 120px
+                img
+                    width: 90%
+            &_flowersRight
+                top: 27%
+                right: 65px
+                img
+                    width: 90%
+            &_box
+                &-inter
+                    &_title
+                        &-head
+                            margin-top: 20px
+                        &-subHead
+                            font-size: 22px
+                    &_form
+                        &-section
+                            margin-top: 20px
+                            margin-bottom: 20px
+                            &_input
+                                width: 350px
+                                height: 50px
+                                // Text style
+                                font-size: 16px
+                            &_paragraph
+                                font-size: 14px
+                                margin-top: 20px
+                        &-sectionButton
+                            margin-top: 30px
+                            &_submit
+                                height: 60px
+                                width: 350px
+                                // Text style
+                                font-size: 22px
+                    &_label
+                        width: 360px
+                        &-text
+                            font-size: 18px
+
+    #dz-refill
+        overflow-y: hidden
+        .dz-refill
+            &_ship
+                bottom: -20px
+
+    #dz-info
+        .dz-info
+            &_flowersLeft
+                left: 140px
+            &_flowersRight
+                right: 90px
+            &_box
+                &-inter
+                    &_paragraph
+                        &-link
+                            width: 500px
+
+    #dz-pay
+        .dz-pay
+            &_bus
+                bottom: 80px
+                right: -520px
+            &_flowers
+                bottom: 20px
+                left: -300px
+            &_box
+                width: 60%
+                padding: 50px 0
+                &-inter
+                    &_form
+                        &-button
+                            &_link
+                                margin-top: 20px
+
+    #dz-secondInfo
+        .dz-secondInfo
+            margin-top: 20px
+            &_flowersLeft
+                left: 30px
+                img
+                    width: 100%
+            &_flowersRight
+                right: 30px
+                img
+                    width: 100%
+            &_box
+                width: 70%
+
+    #dz-spy
+        .dz-spy
+            &_box
+                padding: 50px 0
+                &-inter
+                    &_form
+                        &-button
+                            &_link
+                                margin-top: 20px
+
+    #dz-card
+        overflow-y: hidden
+        .dz-card
+            &_bus
+                bottom: 0px
+            &_flowers
+                bottom: 0px
+            &_box
+                width: 65%
+                height: 90%
+                &-inter
+                    &_form
+                        &-cash
+                            padding-left: 100px
+                        &-info
+                            padding-left: 100px
+                        &-data
+                            &_input
+                                width: 380px
+
+@media screen and (min-width: 1600px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position: 35% 40%
+
+        .dz-home
+            &_box
+                width: 85%
+                height: calc(100vh - 15em)
+                &-hand
+                    top: 15%
+                    left: -290px
+                    width: 1200px
+                &-card
+                    bottom: 30%
+                    left: 125px 
+                    &_inter
+                        &-number
+                            width: 520px
+                            height: 35px
+                &-title
+                    right: 20px
+                    &_first
+                        font-size: 45px
+                    &_second
+                        font-size: 45px
+                &-button
+                    right: 5%
+                    &_link
+                        width: 320px
+                        height: 90px
+                        // Text style
+                        font-size: 25px
+            
+    #dz-login
+        .dz-login
+            &_flowersLeft
+                left: 130px
+            &_flowersRight
+                right: 100px
+            &_box
+                &-exit
+                    &_icon
+                        width: 30px
+
+    #dz-info
+        .dz-info
+            &_flowersLeft
+                left: 170px
+            &_flowersRight
+                right: 120px
+            &_box
+                &-inter
+                    &_paragraph
+                        &-link
+                            width: 500px
+
+    #dz-pay
+        .dz-pay
+            &_bus
+                right: -450px
+            &_flowers
+                left: -250px
+            &_box
+                width: 55%
+
+    #dz-secondInfo
+        .dz-secondInfo
+            margin-top: 0
+            &_flowersLeft
+                left: 90px
+            &_flowersRight
+                right: 90px
+            &_box
+                width: 65%
+
+    #dz-spy
+        .dz-spy
+            &_box
+                width: 65%
+                &-inter
+                    &_form
+                        &-data
+                            &_input
+                                width: 400px
+
+    #dz-card
+        .dz-card
+            &_box
+                &-inter
+                    &_form
+                        &-data
+                            &_input
+                                width: 400px
+    
+@media screen and (min-width: 1920px)
+    #dz-home, #dz-login, #dz-refill, #dz-info, #dz-pay, #dz-secondInfo, #dz-spy, #dz-card
+        &::after
+            background-position: 20% 55%
+
+    #dz-home 
+        .dz-home
+            &_box
+                &-hand
+                    top: 15%
+                    left: -305px
+                    width: 1300px
+                &-card
+                    bottom: 28%
+                    left: 130px 
+                    &_inter
+                        &-number
+                            width: 600px
+                            height: 40px
+                &-title
+                    right: 50px
+                    &_first
+                        font-size: 55px
+                    &_second
+                        font-size: 55px
+                &-button
+                    right: 10%
+                    &_link
+                        width: 350px
+                        height: 100px
+                        // Text style
+                        font-size: 25px
+
+    #dz-login
+        .dz-login
+            &_flowersLeft
+                left: 180px
+                img
+                    width: 100%
+            &_flowersRight
+                right: 180px
+                img
+                    width: 100%
+
+    #dz-refill
+        .dz-refill
+            &_box
+                &-title
+                    &_subHead
+                        margin: 20px 0
+                &-mini
+                    padding: 20px 0
+                    &_bottom
+                        &-firstText
+                            font-size: 25px
+                            span
+                                font-size: 30px
+                        &-secondText
+                            font-size: 25px
+            &_ship
+                bottom: -20px
+
+    #dz-info
+        overflow-y: hidden
+        .dz-info
+            &_flowersLeft
+                left: 220px
+                img
+                    width: 90%
+            &_flowersRight
+                right: 195px
+                img
+                    width: 90%
+            &_box
+                &-inter
+                    &_paragraph
+                        &-link
+                            width: 500px
+                            height: 90px
+
+    #dz-pay
+        .dz-pay
+            &_bus
+                right: -420px
+            &_flowers
+                bottom: 0px
+                left: -250px
+            &_box
+                width: 50%
+            
+    #dz-secondInfo
+        overflow-y: hidden
+        .dz-secondInfo
+            &_flowersLeft
+                left: 240px
+            &_flowersRight
+                right: 240px
+            &_box
+                width: 55%
+
+    #dz-spy
+        overflow-y: hidden
+        .dz-spy
+            &_bus
+                bottom: 80px
+                right: -320px
+            &_flowers
+                bottom: 80px
+                left: -100px
+            &_box
+                width: 60%
+                &-inter
+                    &_form
+                        &-data
+                            &_input
+                                width: 450px
+
+    #dz-card
+        .dz-card
+            &_box
+                width: 55%
+                height: 83%
+                &-inter
+                    &_form
+                        &-data
+                            &_input
+                                width: 400px
